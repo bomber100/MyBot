@@ -10,7 +10,7 @@ def startCommand(bot, update):
     
 def textMessage(bot, update):
     request = apiai.ApiAI('5a5a6c9559904af2998d0bd2a27cc877').text_request() # Токен API к Dialogflow
-    request.lang = 'uk'                 # На каком языке будет послан запрос
+    request.lang = 'ru'                 # На каком языке будет послан запрос
     request.session_id = 'BomberAIBot'  # ID Сессии диалога (нужно, чтобы потом учить бота)
     messageText = update.message.text
     request.query = messageText         # Посылаем запрос к ИИ с сообщением от юзера
